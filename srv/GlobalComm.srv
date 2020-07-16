@@ -1,0 +1,32 @@
+uint8 process_id
+
+uint8 SYSTEM = 0 # All processes
+uint8 SENSORS = 1
+uint8 ORIGIN_DETECTION = 2
+uint8 LOCAL_PLAN = 3
+uint8 GLOBAL_PLAN = 4
+uint8 ARTIFACT_DETECTION = 5
+uint8 FLIGHT_STACK = 6
+uint8 TAKE_OFF = 7
+uint8 LAND = 8
+
+
+uint8 action
+
+uint8 LAUNCH = 1
+uint8 REBOOT = 2 # Only when action = SYSTEM
+uint8 GET_STATUS = 3
+
+---
+
+uint8 status
+
+uint8 OK = 1
+uint8 WARN = 2 # Process succeded with warnings
+uint8 ERROR = 3 # Process failed
+uint8 WAITING = 4 # Process waiting for an external input, for instance origin transform
+
+string message # Status description
+
+
+
