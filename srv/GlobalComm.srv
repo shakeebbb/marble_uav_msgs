@@ -21,9 +21,9 @@ uint8 GET_STATUS = 3
 
 uint8 status
 
-uint8 OK = 1
+uint8 UP = 1
 uint8 WARN = 2 # Process succeded with warnings
-uint8 ERROR = 3 # Process failed
+uint8 DOWN = 3 # Process failed
 uint8 WAITING = 4 # Process waiting for an external input, for instance origin transform
 
 string message # Status description
